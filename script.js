@@ -17,7 +17,7 @@ function startMusic(){
 }
 
 // -------------------- Password --------------------
-const password = "10122011";
+const password = "12345678";
 document.getElementById('pwForm').addEventListener('submit', e=>{
   e.preventDefault();
   const val = document.getElementById('pwInput').value.trim();
