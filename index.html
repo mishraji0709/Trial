@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Surprise 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Heart rain container -->
+  <div id="heart-rain"></div>
+
+  <!-- Background music -->
+  <audio id="bgAudio" loop>
+    <source src="audio/piano.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- MAIN APP -->
+  <div class="app">
+
+    <!-- ================= PASSWORD PAGE ================= -->
+    <section id="passwordPage" class="section active">
+      <div class="card auth-card">
+        <h1 class="handwritten">Welcome to my page</h1>
+        <p>This page is just for you 💖 Enter the password to continue.</p>
+        <form id="pwForm">
+          <input type="password" id="pwInput" placeholder="Enter password" required>
+          <button class="btn">Open</button>
+        </form>
+        <p class="hint">Hint: It's a special date</p>
+      </div>
+    </section>
+
+    <!-- ================= WELCOME PAGE ================= -->
+    <section id="welcomePage" class="section hidden">
+      <div class="card">
+        <h2 class="handwritten">Hi! I’m Shubham Mishra 🎹</h2>
+        <p class="lead">I am a pianist and like to code — that's why I made this page. 
+Welcome to my little surprise 💌</p>
+        <p class="lead">Click below to continue and see something special 🌸</p>
+        <button class="btn" id="continueBtn">Continue →</button>
+      </div>
+    </section>
+
+    <!-- ================= MAIN MESSAGE PAGE ================= -->
+    <section id="mainPage" class="section hidden">
+      <div class="card">
+        <h2 class="handwritten">Hey —</h2>
+        <p id="typewriter"></p>
+        <button class="btn" id="toProposal">Next →</button>
+      </div>
+    </section>
+
+    <!-- ================= PROPOSAL PAGE ================= -->
+    <section id="proposalPage" class="section hidden">
+      <div class="card">
+        <h1 class="handwritten">Will you be my friend? 💖</h1>
+        <p>I want to be someone you can laugh with, lean on, and share little moments with.</p>
+        <div class="btn-row">
+          <button id="yesBtn" class="btn confirm">Yes — I'd love that</button>
+          <button id="noBtn" class="btn outline">Maybe later</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NO RESPONSE PAGE (placeholder) ================= -->
+    <section id="noPage" class="section hidden">
+      <div class="card">
+        <h1 class="handwritten">Oh… really? 😅</h1>
+        <p>Are you sure you don't want to be friends? Let's try one more time 💖</p>
+        <div class="btn-row">
+          <button id="noYesBtn" class="btn confirm">Yes — let's be friends</button>
+          <button id="noNoBtn" class="btn outline">No — really</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= YES RESPONSE PAGE ================= -->
+    <section id="yesPage" class="section hidden">
+      <div class="card">
+        <h2 class="handwritten">Yay! Thank you ❤️</h2>
+        <p>You can find me here:</p>
+        <p class="lead">Instagram: <a href="https://instagram.com/solitary.boy_shubh" target="_blank">@solitary.boy_shubh</a></p>
+        <div class="signature">— Shubham Mishra 🎶</div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
